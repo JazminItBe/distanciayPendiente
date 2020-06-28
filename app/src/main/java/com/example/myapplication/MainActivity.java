@@ -41,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
             Calcular();
             }
         });
+        btnLimp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Limpiar();
+            }
+        });
 
     }
 
