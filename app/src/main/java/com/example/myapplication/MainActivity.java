@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText editDistancia;
     private EditText editPendiente;
     private Button btnCalcular;
-
+    private Button btnLimp;
 
 
     private void Iniciar (){
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Inicializar el boton
         btnCalcular=(Button)findViewById(R.id.btnCalcular);
+        btnLimp=(Button)findViewById(R.id.btnLimp);
 
         //Asignarle u controlador de eventos: listener
         btnCalcular.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             Calcular();
             }
         });
+
     }
 
     private void Calcular(){
@@ -54,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
 
         editDistancia.setText((String.valueOf((Distancia))));
         editPendiente.setText((String.valueOf(Pendiente)));
+    }
+    private void Limpiar(){
+        editPendiente.setText("");
+        editDistancia.setText("");
+        editPx1.setText("");
+        editPx2.setText("");
+        editPy1.setText("");
+        editPy2.setText("");
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

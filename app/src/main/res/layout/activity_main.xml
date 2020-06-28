@@ -4,158 +4,239 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00284d"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="40dp"
+        android:layout_height="22dp"
+        android:background="#C0C0C0"
+        android:gravity="center"
+        android:text="Y1"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="161dp" />
 
     <EditText
         android:id="@+id/editPendiente"
-        android:layout_width="149dp"
-        android:layout_height="61dp"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
         android:ems="10"
         android:inputType="number"
-        android:text="Pendiente"
+        android:text=" "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintHorizontal_bias="0.966"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.519" />
+        app:layout_constraintVertical_bias="0.369" />
 
     <EditText
-        android:id="@+id/editPx2"
-        android:layout_width="79dp"
-        android:layout_height="63dp"
+        android:id="@+id/editDistancia"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
         android:ems="10"
         android:inputType="number"
-        android:text="X2"
+        android:text=" "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.236"
-        app:layout_constraintStart_toEndOf="@+id/editPy1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294" />
-
-    <TextView
-        android:id="@+id/txtPuntoA"
-        android:layout_width="113dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:autoText="false"
-        android:background="@drawable/ic_launcher_background"
-        android:fontFamily="serif"
-        android:text="Punto A"
-        android:textAllCaps="true"
-        android:textColor="?android:attr/colorForeground"
-        android:textIsSelectable="false"
-        android:textSize="24sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintHorizontal_bias="0.308"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.369" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="#C0C0C0"
+        android:gravity="center"
+        android:text="Distancia"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="#C0C0C0"
+        android:gravity="center"
+        android:text="Pendiente"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="257dp" />
 
     <Button
         android:id="@+id/btnCalcular"
-        android:layout_width="117dp"
+        android:layout_width="fill_parent"
         android:layout_height="45dp"
         android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.418" />
+        app:layout_constraintVertical_bias="0.533" />
 
-    <TextView
-        android:id="@+id/txtPuntoB"
-        android:layout_width="106dp"
-        android:layout_height="42dp"
-        android:background="@drawable/ic_launcher_background"
-        android:scrollbarThumbHorizontal="@drawable/ic_launcher_background"
-        android:scrollbarThumbVertical="@drawable/ic_launcher_background"
-        android:text="Punto B"
-        android:textAllCaps="true"
-        android:textColor="@android:color/background_dark"
-        android:textColorHighlight="@color/colorAccent"
-        android:textSize="24sp"
+    <EditText
+        android:id="@+id/editPy2"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=" "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
-        app:layout_constraintStart_toEndOf="@+id/txtPuntoA"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toEndOf="@+id/editPx2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.211" />
+        app:layout_constraintVertical_bias="0.271" />
 
     <EditText
         android:id="@+id/editPy1"
-        android:layout_width="73dp"
-        android:layout_height="59dp"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
         android:ems="10"
         android:inputType="number"
-        android:text="Y1"
+        android:text=" "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toEndOf="@+id/editPx1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintVertical_bias="0.271" />
 
     <EditText
         android:id="@+id/editPx1"
-        android:layout_width="69dp"
-        android:layout_height="61dp"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
         android:ems="10"
         android:inputType="number"
-        android:text="X1"
+        android:text=" "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295" />
+        app:layout_constraintVertical_bias="0.271" />
 
     <EditText
-        android:id="@+id/editDistancia"
-        android:layout_width="139dp"
-        android:layout_height="60dp"
+        android:id="@+id/editPx2"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
         android:ems="10"
         android:inputType="number"
-        android:text="Distancia"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text=" "
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editPendiente"
-        app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toEndOf="@+id/editPy1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintVertical_bias="0.271" />
 
-    <EditText
-        android:id="@+id/editPy2"
-        android:layout_width="76dp"
-        android:layout_height="63dp"
-        android:ems="10"
-        android:inputType="number"
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="40dp"
+        android:layout_height="22dp"
+        android:background="#C0C0C0"
+        android:gravity="center"
+        android:text="X2"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="40dp"
+        android:layout_height="22dp"
+        android:background="#C0C0C0"
+        android:gravity="center"
         android:text="Y2"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="328dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:id="@+id/txtPuntoB"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="#80c1ff"
+        android:gravity="center"
+        android:scrollbarThumbHorizontal="@drawable/ic_launcher_background"
+        android:scrollbarThumbVertical="@drawable/ic_launcher_background"
+        android:text="Punto B"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@color/colorAccent"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.617"
-        app:layout_constraintStart_toEndOf="@+id/editPx2"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toEndOf="@+id/txtPuntoA"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintVertical_bias="0.134" />
+
+    <TextView
+        android:id="@+id/txtPuntoA"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:autoText="false"
+        android:background="#80c1ff"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Punto A"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="#0073e6"
+        android:fontFamily="sans-serif-black"
         android:text="Calculo Geometrico"
+        android:gravity="center"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.099" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="40dp"
+        android:layout_height="22dp"
+        android:background="#C0C0C0"
+        android:gravity="center"
+        android:text="X1"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <Button
+        android:id="@+id/btnLimp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpiar"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="434dp" />
 
 </android.support.constraint.ConstraintLayout>
